@@ -1,0 +1,24 @@
+// colors
+$skyBlue: #2699FB;
+$white: #fff;
+$gray: #7f7f7f;
+$lightBlue: #bce0fd;
+$veryLightBlue: #f1f9ff;
+// type
+$monserrat: "Monserrat", sans-serif;
+$roboto: "Roboto", sans-serif;
+$largeParaType: Georgia, "Times New Roman", Times, serif;
+// size
+$largeParaSize: 40px;
+$mediumText: 0.75em;
+$verySmallText: 0.65em;
+$mediumLineHeight: 2em;
+$gridMin: 1024px;
+$gridMax: 1366px;
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: $monserrat;
+}
