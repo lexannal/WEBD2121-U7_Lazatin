@@ -10,7 +10,7 @@
   background-color: #fff;
 }
 .container nav {
-  background-color: #2699FB;
+  background-color: #2699fb;
   height: 94px;
   display: flex;
   align-items: center;
@@ -51,7 +51,7 @@
 }
 .container #mobile-nav {
   height: calc(100vh - 94px);
-  background-color: #2699FB;
+  background-color: #2699fb;
   justify-content: center;
   align-items: center;
 }
@@ -99,26 +99,28 @@
 .container #section1 #section1-div2 h1 {
   font-family: Georgia, "Times New Roman", Times, serif;
   font-weight: 100;
-  color: #2699FB;
+  color: #2699fb;
   font-size: 2.5em;
   margin-bottom: 1em;
 }
 .container #section1 #section1-div2 button {
   background: none;
-  color: #2699FB;
+  color: #2699fb;
   border: 2px solid #bce0fd;
   font-family: Arial, Helvetica, sans-serif;
   padding: 1.5em 3em;
   border-radius: 0.5em;
 }
-.container #section2 #section2-child #section-left {
+.container #section2 #section2-child {
   background-color: #f1f9ff;
+}
+.container #section2 #section2-child #section-left {
   padding: 2em;
 }
 .container #section2 #section2-child #section-left h1 {
   font-family: Georgia, "Times New Roman", Times, serif;
   font-weight: 100;
-  color: #2699FB;
+  color: #2699fb;
   font-size: 2.5em;
   margin-bottom: 1em;
 }
@@ -126,7 +128,7 @@
   font-family: Arial, Helvetica, sans-serif;
   font-size: 1em;
   line-height: 2em;
-  color: #2699FB;
+  color: #2699fb;
 }
 .container #section2 #section2-child #section-right {
   display: flex;
@@ -148,7 +150,7 @@
 }
 .container #cards .section3 .section3-sections h3 {
   font-family: Arial, Helvetica, sans-serif;
-  color: #2699FB;
+  color: #2699fb;
   font-size: 0.5em;
 }
 .container #cards .section3 .section3-sections span {
@@ -174,7 +176,7 @@
 }
 .container #cards .section3 .footer h3 {
   margin-left: auto;
-  color: #2699FB;
+  color: #2699fb;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 0.75em;
 }
@@ -200,7 +202,7 @@
 }
 .container #section-five #section-five-div p {
   font-size: 0.65em;
-  color: #2699FB;
+  color: #2699fb;
   line-height: 2em;
 }
 .container #section-five #section-five-div #section-five-div-p2 {
@@ -231,15 +233,17 @@
   font-size: 0.75em;
   display: block;
 }
-.container #section-five #section-five-div #section-five-div-div .section-five-div-div-section p:last-child #Path_1, .container #section-five #section-five-div #section-five-div-div .section-five-div-div-section p:last-child #Path_2, .container #section-five #section-five-div #section-five-div-div .section-five-div-div-section p:last-child #Path_3 {
-  stroke: #2699FB;
+.container #section-five #section-five-div #section-five-div-div .section-five-div-div-section p:last-child #Path_1,
+.container #section-five #section-five-div #section-five-div-div .section-five-div-div-section p:last-child #Path_2,
+.container #section-five #section-five-div #section-five-div-div .section-five-div-div-section p:last-child #Path_3 {
+  stroke: #2699fb;
   fill: #fff;
   stroke-width: 2px;
   stroke-linecap: round;
   stroke-linejoin: round;
 }
 .container #footer {
-  background: #2699FB;
+  background: #2699fb;
   padding: 1.5em 1em;
   color: #fff;
 }
@@ -264,7 +268,7 @@
   height: 100%;
 }
 .container #footer form button {
-  color: #2699FB;
+  color: #2699fb;
   background: #fff;
   padding: 0 2em;
   border: none;
@@ -315,10 +319,255 @@
   .container #mobile-nav {
     display: none;
   }
-  .container section#section1 {
-    padding: 3em;
+}
+@media screen and (min-width: 600px) and (max-width: 1366px) {
+  section#section1 {
     width: 70%;
+    margin: 0 auto;
+  }
+  section#section-left {
+    width: 80%;
+    margin: 0 auto;
+  }
+  .container section#section2 section#section2-child section#section-right {
+    padding: 0;
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    row-gap: 0px;
+    grid-template-areas: "one two three" "four five six" "seven seven six";
+  }
+  .container section#section2 section#section2-child section#section-right img {
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+  }
+  .container section#section2 section#section2-child section#section-right img:nth-child(1) {
+    grid-area: one;
+  }
+  .container section#section2 section#section2-child section#section-right img:nth-child(2) {
+    grid-area: two;
+  }
+  .container section#section2 section#section2-child section#section-right img:nth-child(3) {
+    grid-area: three;
+  }
+  .container section#section2 section#section2-child section#section-right img:nth-child(4) {
+    grid-area: four;
+  }
+  .container section#section2 section#section2-child section#section-right img:nth-child(5) {
+    grid-area: five;
+  }
+  .container section#section2 section#section2-child section#section-right img:nth-child(6) {
+    grid-area: six;
+  }
+  .container section#section2 section#section2-child section#section-right img:nth-child(7) {
+    grid-area: seven;
+  }
+  section#cards {
+    width: 90%;
+    margin: 3em auto;
+    display: grid;
+    grid-template-columns: 50% 50%;
+  }
+  div#section-five-div p {
+    width: 60%;
+  }
+  .container section#section-five div#section-five-div div#section-five-div-div {
+    flex-direction: row;
+  }
+  .container section#section-five div#section-five-div div#section-five-div-div .section-five-div-div-section {
+    padding: 1em;
+  }
+  .container section#section-five div#section-five-div div#section-five-div-div .section-five-div-div-section:nth-child(2) {
+    margin: 0 1em;
+  }
+  .container footer#footer form {
+    width: 60%;
+    margin-top: 2em;
+  }
+  .container footer#footer section {
+    width: 60%;
+    margin: 0 auto;
+  }
+  .container footer#footer section ul {
+    width: 50%;
+  }
+  .container footer#footer section ul:last-child {
+    margin-left: 10em;
+  }
+  .container footer#footer address {
+    text-align: center;
+    margin-top: 1.5em;
+  }
+  .container footer#footer span#footer-copy {
+    width: 100%;
+    text-align: center;
+  }
+}
+@media screen and (min-width: 1366px) {
+  .container section#section1 {
+    width: 100%;
     display: flex;
-    justify-content: center;
+    flex-direction: row;
+    margin-top: 2em;
+  }
+  .container section#section1 div#section1-div1 {
+    width: 50%;
+    margin-right: 2em;
+    margin-left: 2em;
+  }
+  .container section#section1 div#section1-div1 img {
+    width: 500px;
+    height: 600px;
+    -o-object-fit: cover;
+    object-fit: cover;
+  }
+  .container section#section1 div#section1-div2 {
+    width: 50%;
+    margin-right: 2em;
+    margin-left: 2em;
+  }
+  .container section#section2 {
+    width: 100%;
+    height: 900px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3em;
+    margin-bottom: 3em;
+  }
+  .container section#section2 section#section2-child {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+  }
+  .container section#section2 section#section2-child #section-left {
+    width: calc(100vw - 900px);
+    height: 900px;
+  }
+  .container section#section2 section#section2-child #section-right {
+    width: 900px;
+    height: 900px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    row-gap: 0;
+    gap: 0;
+    grid-template-areas: "one two three" "four five six" "seven seven six";
+  }
+  .container section#section2 section#section2-child #section-right img {
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    height: auto;
+  }
+  .container section#section2 section#section2-child #section-right img:nth-child(1) {
+    grid-area: one;
+  }
+  .container section#section2 section#section2-child #section-right img:nth-child(2) {
+    grid-area: two;
+  }
+  .container section#section2 section#section2-child #section-right img:nth-child(3) {
+    grid-area: three;
+  }
+  .container section#section2 section#section2-child #section-right img:nth-child(4) {
+    grid-area: four;
+  }
+  .container section#section2 section#section2-child #section-right img:nth-child(5) {
+    grid-area: five;
+  }
+  .container section#section2 section#section2-child #section-right img:nth-child(6) {
+    grid-area: six;
+  }
+  .container section#section2 section#section2-child #section-right img:nth-child(7) {
+    grid-area: seven;
+  }
+  .container section#section2 section#section-five {
+    background-color: #f1f9ff;
+  }
+  .container section#section2 section#section-five div#section-five-div {
+    width: 50%;
+  }
+  .container section#cards {
+    width: 90%;
+    display: grid;
+    margin: 0 auto;
+    grid-template-columns: 25% 25% 25% 25%;
+    margin-top: 3em;
+  }
+  .container section#cards .section3 {
+    margin-top: 2em;
+  }
+  .container section#section-five {
+    background-color: #f1f9ff;
+    padding: 8em 0;
+  }
+  .container section#section-five #section-five-div {
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.3);
+    width: 70%;
+    height: 100%;
+    margin: 0 auto;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+  }
+  .container section#section-five #section-five-div #section-five-div-1 {
+    padding: 4em;
+  }
+  .container section#section-five #section-five-div #section-five-div-1 h1 {
+    margin: 0;
+  }
+  .container section#section-five #section-five-div #section-five-div-div {
+    display: flex;
+    align-items: center;
+  }
+  .container section#section-five #section-five-div #section-five-div-div .section-five-div-div-section {
+    height: 33.33%;
+    margin: 0;
+    width: 100%;
+  }
+  .container footer#footer {
+    height: 170px;
+    padding: 2em;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr 2fr 1fr;
+    grid-template-rows: 1fr 0 0 1fr;
+    gap: 0;
+    grid-template-areas: "AAA BBB CCC DDD EEE" "FFF BBB CCC DDD EEE" "FFF BBB CCC DDD EEE" "GGG HHH III JJJ KKK";
+  }
+  .container footer#footer h1 {
+    grid-area: AAA;
+  }
+  .container footer#footer p {
+    grid-area: DDD;
+  }
+  .container footer#footer form {
+    grid-area: DDD;
+    margin-top: 2em;
+  }
+  .container footer#footer section {
+    margin: 0;
+    display: flex;
+  }
+  .container footer#footer section ul:first-child {
+    grid-area: BBB;
+    width: 50%;
+  }
+  .container footer#footer section ul:last-child {
+    grid-area: CCC;
+    width: 50%;
+    margin-left: 6em;
+  }
+  .container footer#footer address {
+    grid-area: EEE;
+  }
+  .container footer#footer span#footer-copy {
+    grid-area: GGG;
+    margin: 0;
   }
 }/*# sourceMappingURL=style.css.map */
